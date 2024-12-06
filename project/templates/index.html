@@ -1,1 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Scorer</title>
+</head>
+<body>
+    <h1>Resume Scorer</h1>
+    <form method="POST" action="/score">
+        <label for="resume">Paste your resume:</label><br>
+        <textarea id="resume" name="resume" rows="10" cols="50" required></textarea><br><br>
 
+        <label for="job_title">Job Title:</label><br>
+        <input type="text" id="job_title" name="job_title" required><br><br>
+
+        <input type="submit" value="Get Score">
+    </form>
+
+    {% if score is not none %}
+        <h2>Results</h2>
+        <p><strong>Job Title:</strong> {{ job_title }}</p>
+        <p><strong>Resume:</strong> {{ resume }}</p>
+        <p><strong>Relevance Score:</strong> {{ score }}</p>
+    {% endif %}
+</body>
+</html>
