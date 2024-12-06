@@ -1,6 +1,7 @@
 # CPSC-171-Project-Resume-Scoring-Using-NLP
  A resume scoring system that evaluates the semantic relevance of a resume to a job title using  Word2Vec.
- To Access and Run the Application Locally:
+ 
+ To access and run the application locally:
  1. Clone this GitHub Repository
  2. Install Dependencies. Ensure you are in a virtual environment (optional but recommended), then run:
     `pip install -r requirements.txt`
